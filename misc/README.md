@@ -14,7 +14,7 @@ The flag was encoded using ***Braille***.
 
 1.  Find a [Braille decoder](https://www.dcode.fr/braille-alphabet) online to solve the problem.
 
-    ![Braille decoder](../img/Braille decoder.png)
+    ![Braille decoder](../img/Braille-decoder.png)
 
 2.  Type down the Braille ciphertext and get `⠠A⠠I⠠S3⠐⠸⠠I-FEEL-SLEEPY-⠠GOOD-⠠NIGHT!!!⠐⠸`.
 
@@ -197,10 +197,10 @@ Though it is obvious that timing attack can achieve the flag, there is one diffi
 
 
 
-### 👿Shichirou (unsolved)
+## 👿Shichirou (unsolved)
 
 -   Score: 450, Solves: 65
 
-### 🧸Clara (unsolved)
+## 🧸Clara (unsolved)
 
 -   Score: 500, Solves: 2

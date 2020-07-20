@@ -39,7 +39,7 @@ The flag was encoded using ***Braille***.
 
 1.  Check the filetype of the image.
 
-    ![karuego file](../img/karuego file.png)
+    ![karuego file](../img/karuego-file.png)
 
     ➜ correspond to the extension
 
@@ -107,7 +107,7 @@ From step 2, we can find that there is another image, `3a66fa5887bcb740438f1fb49
 
 1.  Download image `3a66fa5887bcb740438f1fb49f78569cb56e9233_hq.jpg`.
 
-    ![karuego download](../img/karuego download.png)
+    ![karuego download](../img/karuego-download.png)
 
 2.  Create a directory `files` and put the image inside.
 
@@ -158,15 +158,15 @@ From step 2, we can find that there is another image, `3a66fa5887bcb740438f1fb49
 
 
 
-Recover the QR code with the help of the [webpage](https://merricx.github.io/).
+Recover the QR code with the help of the [webpage](https://merricx.github.io/qrazybox/).
 
 1.  Choose the version that fit the given QR code.
 
-    ![soy new](../img/soy new.png)
+    ![soy new](../img/soy-new.png)
 
 2.  Fill the as much pixel in black and whie as possible.
 
-    ![soy after](../img/soy after.png)
+    ![soy after](../img/soy-after.png)
 
 3.  Use **Tools**, *Extract QR Information*, then the it can decode the hidden information in the QR code and find the flag.
 

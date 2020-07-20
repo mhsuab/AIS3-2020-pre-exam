@@ -89,7 +89,7 @@ The flag was encoded using ***Braille***.
 
 5.  Get image *Demon.png* and find the **flag**.
 
-    ![Demon](/Users/mindy/Desktop/AIS3-2020-pre-exam/misc/karuego/files/Demon.png)
+    ![Demon](../misc/karuego/files/Demon.png)
 
 ---
 

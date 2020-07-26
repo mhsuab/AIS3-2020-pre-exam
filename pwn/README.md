@@ -35,13 +35,13 @@
     }
     ```
 
-    $\because$ `gets`
+    $ \because $ `gets`
 
-    $\therefore$ buffer overflow
+    $ \therefore $ buffer overflow
 
 4.  distance to `old rbp = 0x30` (not exactly the length of char buffer)
 
-     $\therefore$  `payload = nonsense * 0x30 + (8 bytes to overwrite rbp) + (target return address)`
+     $ \therefore $  `payload = nonsense * 0x30 + (8 bytes to overwrite rbp) + (target return address)`
 
     | ![](../img/bof-main.png) | ![](../img/bof-main2.png) |
     | -------- | -------- |
@@ -50,11 +50,11 @@
 
     Target: `system("\bin\sh")`
 
-    ![bof-system](/Users/mindy/Desktop/AIS3-2020-pre-exam/img/bof-system.png)
+    ![bof-system](../img/bof-system.png)
 
     `return to 0x400687` $\because$ function sub_400687 call `system("\bin\sh")`
 
-    $\therefore$  `payload = ‘A’ * (0x30 + 8) + 0x400687`
+    $ \therefore $  `payload = ‘A’ * (0x30 + 8) + 0x400687`
 
 6.  use `gdb` to test the payload
 

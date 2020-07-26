@@ -35,13 +35,13 @@
     }
     ```
 
-    $ \because $ `gets`
+     `gets` doesn’t check the input length
 
-    $ \therefore $ buffer overflow
+    ➜ buffer overflow
 
 4.  distance to `old rbp = 0x30` (not exactly the length of char buffer)
 
-     $ \therefore $  `payload = nonsense * 0x30 + (8 bytes to overwrite rbp) + (target return address)`
+    ➜  `payload = nonsense * 0x30 + (8 bytes to overwrite rbp) + (target return address)`
 
     | ![](../img/bof-main.png) | ![](../img/bof-main2.png) |
     | -------- | -------- |
@@ -54,7 +54,7 @@
 
     `return to 0x400687` $\because$ function sub_400687 call `system("\bin\sh")`
 
-    $ \therefore $  `payload = ‘A’ * (0x30 + 8) + 0x400687`
+    ➜  `payload = ‘A’ * (0x30 + 8) + 0x400687`
 
 6.  use `gdb` to test the payload
 
@@ -62,7 +62,7 @@
 
     Crack because the `rsp` value was not 16 byte padded (hex representation didn’t end with `0`)
 
-    $\therefore$  `payload = ‘A’ * (0x30 + 8) + ret + 0x400687`
+    ➜  `payload = ‘A’ * (0x30 + 8) + ret + 0x400687`
 
 7.  Get shell.
 

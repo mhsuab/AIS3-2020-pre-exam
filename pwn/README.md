@@ -58,7 +58,7 @@
 
 6.  use `gdb` to test the payload
 
-    ![bof-gdb](/Users/mindy/Desktop/AIS3-2020-pre-exam/img/bof-gdb.png)
+    ![bof-gdb](../img/bof-gdb.png)
 
     Crack because the `rsp` value was not 16 byte padded (hex representation didn’t end with `0`)
 

@@ -70,3 +70,28 @@
 
     ![bof-final](../img/bof-final.png)
 
+## 📃 Nonsense (unsolved)
+
+-   Score: 474, Solves: 47
+
+### Problem
+
+[nonsense](nonsense/nonsense)
+
+### Protection
+
+```sh
+$ file nonsense 
+nonsense: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=d7f0f2c524809cfa4a862fe5468df4429606e0b6, stripped
+
+$ checksec nonsense
+CANARY    : disabled
+FORTIFY   : disabled
+NX        : disabled
+PIE       : disabled
+RELRO     : Partial
+```
+
+### Solution
+
+1.  

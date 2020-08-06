@@ -24,15 +24,19 @@ bytes_string = b''
 CASE = 0
 
 while till < l:
+    print (CASE, end=' ')
     if CASE == 0 or CASE == 2:
         n = unpack('<I', bxor(raw[till: till + 4], key))[0]
         till += 4
+        print (n)
     else:
         bytes_string = bxor(raw[till: till + n], key)
         till += n
         if CASE == 1:
             filename = bytes_string.decode()
+            print (filename)
         else:
+            print ('write')
             with open(os.path.join(sys.argv[1][:2], filename), 'wb') as f:
                 f.write(bytes_string)
         bytes_string = b''

@@ -40,6 +40,3 @@ from binascii import unhexlify
 print (hex(ans))
 print (unhexlify(hex(ans)[2:]))
 print (unhexlify(hex(ans)[2:]).decode())
-
-from Crypto.Util.number import long_to_bytes
-print (long_to_bytes(ans))
